@@ -13,4 +13,4 @@ c4l.o: c4l.c c4l.h c4.h
 	gcc -c c4l.c
 
 clean:
-	rm -f c4
+	rm -f c4 *.o
