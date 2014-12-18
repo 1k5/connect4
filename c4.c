@@ -16,7 +16,8 @@ static struct c4game G;
 
 /** Initialize Game.
  *
- * Allocate game resources and register global game object 'G' in each lua state.
+ * Allocate game resources and register global game object 'G' in each lua
+ * state.
  *
  * \param L	The players' lua states.
  * \return	Status code: -1 in case of an error, 0 in case of success.
@@ -36,7 +37,9 @@ int c4_init(lua_State *L[]) {
 		ret = -1;
 	} else {
 		for (i=0; i<2; i++) {
-			if ( (g[i] = lua_newuserdata(L[i], sizeof(*g))) == NULL  ||  !c4l_register(L[i]) ) {
+			if ( (g[i] = lua_newuserdata(L[i], sizeof(*g)))
+				== NULL  ||  !c4l_register(L[i]) )
+			{
 				free(G.board);
 				free(G.prev_move);
 				ret = -1;
@@ -186,7 +189,8 @@ int c4_play(lua_State *L[]) {
 		if (c4_makemove(move, p)) {
 			if (c4_movewins(move)) {
 				ret = p;
-				printf("Player %d played a winning move!\n", p+1);
+				printf("Player %d played a winning move!\n",
+				       p+1);
 				break;
 			};
 		} else {
