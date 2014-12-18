@@ -11,16 +11,6 @@ function move()
 	local width = C4:width()
 	local height = C4:height()
 
-	--[[
-	for i = height,1,-1 do
-		printf('|')
-		for j = 1,width do
-			printf(' %d |', C4[i][j])
-		end
-		printf('\n')
-	end
-	--]]
-
 	printf('- [%d] Making a move:', player)
 	repeat
 		m = math.random(width)

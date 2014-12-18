@@ -1,0 +1,20 @@
+# ./c4 ai-random ai-random
+Player 1: 5591, Player 2: 4366, Draw: 43.
+
+# ./c4 ai-random ai-random2
+Player 1: 4814, Player 2: 5153, Draw: 33.
+
+# ./c4 ai-random ai-random3
+Player 1: 5912, Player 2: 4049, Draw: 39.
+
+# ./c4 ai-random2 ai-random
+Player 1: 6428, Player 2: 3524, Draw: 48.
+
+# ./c4 ai-random2 ai-random3
+Player 1: 6869, Player 2: 3087, Draw: 44.
+
+# ./c4 ai-random3 ai-random
+Player 1: 5123, Player 2: 4839, Draw: 38.
+
+# ./c4 ai-random3 ai-random2
+Player 1: 4282, Player 2: 5683, Draw: 35.

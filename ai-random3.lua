@@ -12,8 +12,8 @@ function move()
 	local height = C4:height()
 
 	printf('- [%d] Making a move:', player)
-	if (C4[1][4] == 0) then
-		m = 4
+	if (C4[1][1] == 0) then
+		m = 1
 	else
 		repeat
 			m = math.random(width)
